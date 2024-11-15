@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom Webinar Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <h2>Zoom Webinar Registration Form</h2>
+        <p>Please fill out the details below to register for the webinar.</p>
+    </div>
+    
+    <form>
+        <div class="name-row">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name">
+            </div>
+            
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name">
+            </div>
+        </div>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address">
+        <small>We'll send the webinar link to this email.</small>
+        
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" placeholder="Enter the name of your organization">
+        <small>The name of your company or university</small>
+        
+        <label for="job-title">Job Title</label>
+        <select id="job-title">
+            <option>Select your job title</option>
+            <option>Software Engineer</option>
+            <option>Product Manager</option>
+            <option>Data Analyst</option>
+        </select>
+        
+        <label for="experience">Years of Experience</label>
+        <input type="number" id="experience" placeholder="Enter number of years">
+        <small>Number of years you've been working in your field.</small>
+        
+        <p class="checkbox-label">Which topics are you most interested in?</p>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Technology</label>
+            <label><input type="checkbox"> Marketing</label>
+            <label><input type="checkbox"> Sales</label>
+            <label><input type="checkbox"> Human Resources</label>
+            <label><input type="checkbox"> Finance</label>
+            <label><input type="checkbox"> Other</label>
+        </div>
+        
+        <label class="terms">
+            <input type="checkbox"> I agree to the terms and conditions and consent to receive marketing communications.
+        </label>
+        
+        <button type="submit">Register Now</button>
+    </form>
+</div>
+
+</body>
+</html>
