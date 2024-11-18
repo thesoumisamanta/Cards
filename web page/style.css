@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 1, 43);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(2, 2, 97);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.content{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.text-area h1 {
+    font-size: 3rem;
+    color: rgb(247, 107, 7);
+}
+
+.text-area p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.image-area img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px 15px rgb(77, 77, 5);
+    transition: transform 0.5s ease-in-out;
+}
+.image-area img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px gold;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    background-color: rgb(2, 2, 97);
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+footer p{
+    margin: 0;
+    font-weight: 200;
+}
+
+@media (max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .text-area {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .text-area p {
+        text-align: justify;
+    }
+    .image-area img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    nav ul li {
+        margin: 0 0.5rem;
+
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
